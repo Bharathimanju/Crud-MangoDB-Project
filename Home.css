@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Sets container height to full viewport height */
+}
+
+.homeimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 19%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    /* Add shadow for readability */
+}
+
+.h1 {
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    color: white;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.button {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 16%;
+    background-color: teal;
+    width: 100px;
+    font-size: 25px;
+    border: 1px solid white;
+    padding: 3px;
+    margin: 2px;
+    font-weight: 500;
+}
+
+.homeimage2 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 30%;
+    opacity: 0.8;
+}
+
+.h21 {
+    color: teal;
+    font-weight: 400;
+}
+
+.p {
+    color: teal;
+}
+
+.button2 {
+    width: 125px;
+    border: 1px solid black;
+    background-color: teal;
+    color: white;
+    margin: 3px;
+    padding: 3px;
+    font-weight: 550;
+    margin-left: 5%;
+}
+
+.center {
+    text-align: center;
+    /* color: rgb(8, 59, 59); */
+    color: rgb(31, 81, 81);
+}
+
+.image-containers {
+    position: relative;
+    width: 100%;
+    /* height: 300px;  */
+}
+
+.place-image {
+
+    width: 235px;
+
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+
+}
+
+.place-image:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+.overlay-texts {
+    position: absolute;
+    top: 85%;
+    /* Center the text vertically */
+    left: 18%;
+    /* Center the text horizontally */
+    transform: translate(-50%, -50%);
+    /* Offset for perfect centering */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    /* Optional: add text shadow for better readability */
+}
+
+.overlays-texts {
+    position: absolute;
+    top: 85%;
+    /* Center the text vertically */
+    left: 33%;
+    /* Center the text horizontally */
+    transform: translate(-50%, -50%);
+    /* Offset for perfect centering */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    /* Optional: add text shadow for better readability */
+}
+
+.over {
+    position: absolute;
+    left: 20px;
+    top: 90%;
+    color: white;
+}
+
+.button3 {
+    width: px;
+    border: 1px solid black;
+    background-color: teal;
+    color: white;
+    margin: 3px;
+    padding: 3px;
+    font-weight: 400;
+    margin-top: 5px;
+
+}
+
+.box {
+    background-color: rgb(51, 110, 110);
+}
+
+.centers {
+    text-align: center;
+    color: white
+}
+
+#row h5 {
+    color: teal;
+}
+
+#row p {
+    color: rgb(5, 134, 91);
+    text-align: start;
+}
+
+.font i {
+    color: rgb(30, 90, 90);
+    font-size: 20px;
+    padding: 3px;
+}
+
+.content-col {
+    width: 40%;
+}
+
+.image-col {
+    width: 60%;
+}
+
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img {
+    width: 300px;
+    margin: 10px;
+}
+
+.content-col h1 {
+    font-size: 7vmin;
+    color: #484872;
+}
+
+.content-col .line {
+    margin-left: -1px;
+}
+
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+}
+
+.content-col .ctn {
+    margin-left: -100px;
+}
+
+.img-fluid {
+    width: 100%;
+    /* Set the image to take full width of its column */
+    max-width: 260px;
+    /* Limit the width to 200px or adjust to your preference */
+    margin: 0 auto;
+    /* Center the image within the column */
+    display: block;
+}
+
+.btns {
+    background-color: #fc036b;
+    color: white;
+    border: 1px solid;
+    margin-left: 40px;
+
+}
+
+.btns:hover {
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px #00000056;
+}
+
+.imagesize {
+    width: 100px;
+    height: 100px;
+    box-sizing: 50%;
+}
+
+/* imges slide */
+.card-img-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* Adjust height as per your requirement */
+    overflow: hidden;
+}
+
+.card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: slideEffect 9s infinite;
+
+}
+
+.card-img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.card-img:nth-child(2) {
+    animation-delay: 3s;
+
+}
+
+.card-img:nth-child(3) {
+    animation-delay: 6s;
+
+}
+
+/* Keyframe animation to create the sliding effect */
+@keyframes slideEffect {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+        /* First image fades in */
+    }
+
+    40% {
+        opacity: 0;
+        /* First image fades out */
+    }
+
+    60% {
+        opacity: 0;
+        /* Second image stays hidden */
+    }
+
+    80% {
+        opacity: 1;
+        /* Second image fades in */
+    }
+
+    100% {
+        opacity: 0;
+        /* Second image fades out */
+    }
+}
+
+.boxes {
+    text-align: center;
+}
+
+.boxes p {
+    font-style: italic;
+}
+
+#back {
+    background-image: url(./images/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.on {
+    text-align: center;
+}
+
+.on p {
+    margin-top: 2%;
+}
+
+/* images card show */
+.card-img-containerss {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    /* Adjust height as per your requirement */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(12, 58, 12);
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card:hover .image-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover .card-img-top {
+    opacity: 0.7;
+
+}
+
+.off {
+    justify-content: space-between;
+    display: flex;
+}
+
+/* scroolbar */
+/* Target the scrollbar itself */
+.your-container::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the vertical scrollbar */
+    height: 8px;
+    /* Height of the horizontal scrollbar */
+}
+
+/* Style the scrollbar track (the area the thumb slides within) */
+.your-container::-webkit-scrollbar-track {
+
+    background-color: #f1f1f1;
+
+    border-radius: 10px;
+
+}
+
+/* Style the scrollbar thumb (the draggable part of the scrollbar) */
+.your-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Gray thumb */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: 2px solid #fff;
+    /* Adds a white border around the thumb */
+}
+
+/* Style the scrollbar thumb on hover */
+.your-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Darker gray when hovered */
+}
+
+/* Optional: Style the scrollbar corner (where the horizontal and vertical scrollbars meet) */
+.your-container::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+}
+
+.card-img-tops {
+    height: 275px;
+}
+
+.ok h5,
+p {
+    text-align: center;
+}
+
+.ok p {
+    color: green;
+}
+
+.no p {
+    text-align: start;
+    font-size: 14px;
+    margin-top: 3%;
+}
+
+.card-img-tope {
+    height: 130px;
+}
+
+.off h6 {
+    text-align: center;
+    color: brown;
+}
+
+/* review */
+.review-card {
+    border: none;
+    border-radius: 10px;
+    background: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card .card-body {
+    padding: 20px;
+}
+
+.review-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.review-card .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.review-card .review-rating i {
+    font-size: 1.2rem;
+}
+
+.review-card .review-rating .fa-star {
+    color: #ff9900;
+}
+
+.review-card .review-rating .fa-star-half-alt {
+    color: #ffcc00;
+}
+
+.review-card .review-rating .fa-star.text-muted {
+    color: #e0e0e0;
+}
+
+.review-card .review-date {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.review-card .card-footer {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+}
